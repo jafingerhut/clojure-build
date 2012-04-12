@@ -1,3 +1,4 @@
+clj-967-improved-fix-for-ibm-jdks-patch2.txt
 0001-CLJ-827-Add-bit-shift-right-logical.patch
 0001-Fix-docstring-for-file-refs-196.patch
 0001-Make-sure-the-clojure.core-bases-function-always-ret.patch
