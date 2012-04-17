@@ -5,7 +5,7 @@ set -e
 # Latest as of April 17, 2012.
 CLOJURE_SHA="edae9836c54d70bb6db3fe32c1e41bc886abdd2b"
 
-[ ! -e clojure ] && git clone http://github.com/clojure/clojure
+[ ! -e clojure ] && git clone git://github.com/clojure/clojure.git
 
 cd clojure
 
