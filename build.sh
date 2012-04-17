@@ -2,8 +2,8 @@
 
 set -e
 
-# Latest as of April 10, 2012.
-CLOJURE_SHA="0ef92ba7731f8cd9ec7c6125f83ff8262c52932b"
+# Latest as of April 17, 2012.
+CLOJURE_SHA="edae9836c54d70bb6db3fe32c1e41bc886abdd2b"
 
 [ ! -e clojure ] && git clone http://github.com/clojure/clojure
 
