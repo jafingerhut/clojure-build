@@ -19,7 +19,7 @@ clj-757-fix-behavior-of-empty-transient-maps-patch2.txt
 clj-783-patch.txt
 clj-850-type-hinted-fn-abstractmethoderror-patch3.txt
 clj-873-namespace-divides-patch.txt
-clj-893-doc-vec-aliases-java-array-patch2.txt
+clj-893-doc-vec-aliases-java-array-patch3.txt
 clj-896-browse-url-uses-xdg-open-patch2.txt
 clj-902-doc-on-namespaces-patch.txt
 clj-923-reading-ratios-prefixed-by-plus-patch2.txt
