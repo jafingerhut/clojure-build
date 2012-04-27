@@ -32,6 +32,5 @@ clj-788-add-line-member-and-getter-to-CompilerException-patch.txt
 clj-952-make-bigdec-work-on-bigints-patch1.txt
 clj-925-patch.diff
 clj-892-clarify-sort-sort-by-doc-strings-patch1.txt
-0001-Print-metadata-and-anonymous-classes-better.patch
-0001-Implement-CLJ-207-let-as-first-for-binding-form.patch
+clj-908-0001-Print-metadata-and-anonymous-classes-better.patch
 clj-763-0001-Do-not-check-for-duplicates-in-destructuring-map-cre.patch
