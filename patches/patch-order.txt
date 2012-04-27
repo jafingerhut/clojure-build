@@ -13,7 +13,7 @@ clj-768-patch-for-after-clj-881-fixed-patch2.txt
 CLJ-932-0001.patch
 capitalize-for-supplementary-chars-patch.txt
 cl-format-efg-coerce-ratios-to-doubes-patch1.txt
-clj-103-incorrect-if-let-error-patch2.txt
+clj-103-improved-if-let-error-message-patch.txt
 clj-667-allow-loop-recur-nested-in-catch-and-finally-patch2.txt
 clj-757-fix-behavior-of-empty-transient-maps-patch2.txt
 clj-783-patch.txt
