@@ -1,0 +1,53 @@
+From 2588ebdf705b22d3e90eebd3419a7e60a13f1270 Mon Sep 17 00:00:00 2001
+From: Tassilo Horn <tassilo@member.fsf.org>
+Date: Fri, 23 Dec 2011 11:24:30 +0100
+Subject: [PATCH] Don't use descructuring in defrecord/deftype arglists to get
+ a slightly better error message when forgetting to specify
+ the fields vector.
+
+---
+ src/clj/clojure/core_deftype.clj |   12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+
+diff --git a/src/clj/clojure/core_deftype.clj b/src/clj/clojure/core_deftype.clj
+index cca4501..74afd57 100644
+--- a/src/clj/clojure/core_deftype.clj
++++ b/src/clj/clojure/core_deftype.clj
+@@ -266,6 +266,8 @@
+ (defn- validate-fields
+   ""
+   [fields]
++  (when-not (vector? fields)
++    (throw (AssertionError. "No fields vector given.")))
+   (let [specials #{'__meta '__extmap}]
+     (when (some specials fields)
+       (throw (AssertionError. (str "The names in " specials " cannot be used as field names for types or records."))))))
+@@ -337,9 +339,10 @@
+   Given (defrecord TypeName ...), two factory functions will be
+   defined: ->TypeName, taking positional parameters for the fields,
+   and map->TypeName, taking a map of keywords to field values."
+-  {:added "1.2"}
++  {:added "1.2"
++   :arglists '([name [& fields] & opts+specs])}
+ 
+-  [name [& fields] & opts+specs]
++  [name fields & opts+specs]
+   (validate-fields fields)
+   (let [gname name
+         [interfaces methods opts] (parse-opts+specs opts+specs)
+@@ -430,9 +433,10 @@
+ 
+   Given (deftype TypeName ...), a factory function called ->TypeName
+   will be defined, taking positional parameters for the fields"
+-  {:added "1.2"}
++  {:added "1.2"
++   :arglists '([name [& fields] & opts+specs])}
+ 
+-  [name [& fields] & opts+specs]
++  [name fields & opts+specs]
+   (validate-fields fields)
+   (let [gname name
+         [interfaces methods opts] (parse-opts+specs opts+specs)
+-- 
+1.7.9.2
+
