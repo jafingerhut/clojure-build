@@ -1,6 +1,7 @@
 clj-730-0001-add-tests-for-complement-constantly-juxt-partial.patch
 clj-962-subvec-nth-throws-on-negative-index-patch1.txt
 clj-897-deftype-error-message-is-misleading-patch.txt
+clj-940-add-exception-for-non-sequence-in-refer-only-patch.txt
 clj-967-improved-fix-for-ibm-jdks-patch2.txt
 0001-CLJ-827-Add-bit-shift-right-logical.patch
 0001-Fix-docstring-for-file-refs-196.patch

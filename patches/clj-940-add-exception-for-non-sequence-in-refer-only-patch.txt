@@ -1,0 +1,27 @@
+From b488a86ea40d0260c575642b7cfd6589fef2c5c2 Mon Sep 17 00:00:00 2001
+From: Hugo Duncan <hugo@hugoduncan.org>
+Date: Fri, 24 Feb 2012 13:08:26 -0500
+Subject: [PATCH] Throw an informative exception when refer :only passed a non
+ sequence
+
+---
+ src/clj/clojure/core.clj |    3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/src/clj/clojure/core.clj b/src/clj/clojure/core.clj
+index 336be78..35a26e4 100644
+--- a/src/clj/clojure/core.clj
++++ b/src/clj/clojure/core.clj
+@@ -3768,6 +3768,9 @@
+           to-do (if (= :all (:refer fs))
+                   (keys nspublics)
+                   (or (:refer fs) (:only fs) (keys nspublics)))]
++      (when-not (instance? clojure.lang.IPersistentCollection to-do)
++        (throw (new Exception
++                    ":only passed invalid value. Value should be a sequence of symbols")))
+       (doseq [sym to-do]
+         (when-not (exclude sym)
+           (let [v (nspublics sym)]
+-- 
+1.7.9.2
+
