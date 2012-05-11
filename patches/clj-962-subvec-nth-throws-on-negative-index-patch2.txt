@@ -1,6 +1,6 @@
-From 20a50ff74a82e0c0d991ed49c5301c741707d495 Mon Sep 17 00:00:00 2001
+From e7b41f125860c57e58cdc15c9c2c656fd1308a83 Mon Sep 17 00:00:00 2001
 From: Andy Fingerhut <andy_fingerhut@alum.wustl.edu>
-Date: Thu, 29 Mar 2012 08:10:12 -0700
+Date: Thu, 10 May 2012 16:24:30 -0700
 Subject: [PATCH] Make nth on subvec throw exception for negative indices
 
 ---
@@ -9,11 +9,11 @@ Subject: [PATCH] Make nth on subvec throw exception for negative indices
  2 files changed, 9 insertions(+), 1 deletion(-)
 
 diff --git a/src/jvm/clojure/lang/APersistentVector.java b/src/jvm/clojure/lang/APersistentVector.java
-index 2b37379..a1590b3 100644
+index 995789e..84acdc9 100644
 --- a/src/jvm/clojure/lang/APersistentVector.java
 +++ b/src/jvm/clojure/lang/APersistentVector.java
-@@ -521,7 +521,7 @@ static class SubVector extends APersistentVector implements IObj{
- 	}
+@@ -523,7 +523,7 @@ static class SubVector extends APersistentVector implements IObj{
+ 	public Iterator iterator(){return ((PersistentVector)v).rangedIterator(start,end);}
  
  	public Object nth(int i){
 -		if(start + i >= end)
@@ -38,5 +38,5 @@ index 8d76e3a..f58907e 100644
 +    (is (= (v1 50) (v2 0)))
 +    (is (= (v1 56) (v2 6)))))
 -- 
-1.7.9.2
+1.7.10
 
