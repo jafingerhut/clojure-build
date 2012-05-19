@@ -1,8 +1,5 @@
-clj-730-0001-add-tests-for-complement-constantly-juxt-partial.patch
-clj-962-subvec-nth-throws-on-negative-index-patch2.txt
 clj-897-deftype-error-message-is-misleading-patch.txt
 clj-940-add-exception-for-non-sequence-in-refer-only-patch.txt
-clj-967-improved-fix-for-ibm-jdks-patch2.txt
 0001-CLJ-827-Add-bit-shift-right-logical.patch
 0001-Fix-docstring-for-file-refs-196.patch
 clj-828-0001-Make-sure-the-clojure.core-bases-function-always-ret.patch
@@ -12,18 +9,15 @@ clj-865-0002-Preserve-form-metadata-on-macroexpanded-forms.patch
 clj-939-0002-report-load-exceptions-with-file-and-line.diff
 clj-917-0001-Add-docstring-and-added-metadata-to-definterface.patch
 CLJ-753-870-905-combined-fix3.patch
-clj-881-cl-format-exception-patch2.txt
 clj-768-patch-for-after-clj-881-fixed-patch2.txt
 CLJ-932-0001.patch
 clj-945-capitalize-for-supplementary-chars-patch.txt
 clj-937-cl-format-efg-coerce-ratios-to-doubes-patch1.txt
-clj-103-improved-if-let-error-message-patch.txt
 clj-667-allow-loop-recur-nested-in-catch-and-finally-patch2.txt
 clj-757-fix-behavior-of-empty-transient-maps-patch2.txt
 clj-783-patch.txt
 clj-850-type-hinted-fn-abstractmethoderror-patch3.txt
 clj-873-namespace-divides-patch.txt
-clj-893-doc-vec-aliases-java-array-patch3.txt
 clj-896-browse-url-uses-xdg-open-patch2.txt
 clj-902-doc-on-namespaces-patch.txt
 clj-923-reading-ratios-prefixed-by-plus-patch2.txt
@@ -33,8 +27,5 @@ transient-disj-patch1-updated.txt
 clj-700-patch2-updated.txt
 clj-157-better-err-msgs-for-defn-fn-syntax-errors-patch2.txt
 clj-788-add-line-member-and-getter-to-CompilerException-patch.txt
-clj-952-make-bigdec-work-on-bigints-patch1.txt
 clj-925-patch.diff
-clj-892-clarify-sort-sort-by-doc-strings-patch1.txt
-clj-908-0001-Print-metadata-and-anonymous-classes-better.patch
-clj-763-0001-Do-not-check-for-duplicates-in-destructuring-map-cre.patch
+clj-908-Print-metadata-and-anonymous-classes-better-patch2.txt
