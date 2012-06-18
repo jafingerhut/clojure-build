@@ -1,5 +1,4 @@
 clj-967-disable-failing-io-copy-tests-on-ibm-jdk-16-patch1.txt
-clj-897-deftype-error-message-is-misleading-patch.txt
 clj-940-add-exception-for-non-sequence-in-refer-only-patch.txt
 0001-CLJ-827-Add-bit-shift-right-logical.patch
 0001-Fix-docstring-for-file-refs-196.patch
@@ -10,12 +9,10 @@ clj-865-0002-Preserve-form-metadata-on-macroexpanded-forms.patch
 clj-939-0002-report-load-exceptions-with-file-and-line.diff
 clj-917-0001-Add-docstring-and-added-metadata-to-definterface.patch
 CLJ-753-870-905-combined-fix3.patch
-clj-768-patch-for-after-clj-881-fixed-patch2.txt
 CLJ-932-0001.patch
 clj-945-capitalize-for-supplementary-chars-patch.txt
 clj-937-cl-format-efg-coerce-ratios-to-doubes-patch1.txt
-clj-667-allow-loop-recur-nested-in-catch-and-finally-patch2.txt
-clj-757-fix-behavior-of-empty-transient-maps-patch2.txt
+clj-757-fix-behavior-of-empty-transient-maps-patch3.txt
 clj-783-patch.txt
 clj-850-type-hinted-fn-abstractmethoderror-patch3.txt
 clj-873-namespace-divides-patch.txt
@@ -24,7 +21,6 @@ clj-902-doc-on-namespaces-patch.txt
 clj-923-reading-ratios-prefixed-by-plus-patch2.txt
 clj-935-fix-trim-fns-different-whitespace-patch.txt
 clj-858-stm-rm-msecs-patch.diff
-transient-disj-patch1-updated.txt
 clj-700-patch2-updated.txt
 clj-157-better-err-msgs-for-defn-fn-syntax-errors-patch2.txt
 clj-788-add-line-member-and-getter-to-CompilerException-patch.txt
